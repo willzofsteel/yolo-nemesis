@@ -1,4 +1,4 @@
-define(['underscore', 'backbone'], function() {
+define(['underscore', 'backbone', 'views/testView'], function(_, Backbone, TestView) {
    
     var router = Backbone.Router.extend({
 
@@ -6,7 +6,8 @@ define(['underscore', 'backbone'], function() {
     		"" : "index"
     	},
 
-    	index: function(){	
+    	index: function(){
+    		var testView = new TestView();    		
     	}
 
     });
