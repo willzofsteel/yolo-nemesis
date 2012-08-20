@@ -1,4 +1,4 @@
-tasks minify {
+tasks hello {
 	doLast{
 		println 'testing gradle!'
 	}
