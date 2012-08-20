@@ -1,4 +1,9 @@
-define(['underscore', 'backbone', 'views/testView', 'jasmineSpecRunner'], function(_, Backbone, TestView, SpecRunner) {
+define([
+    'underscore'
+    , 'backbone'
+    , 'views/testView'
+    , 'jasmineSpecRunner'
+], function(_, Backbone, TestView, SpecRunner) {
    
     var router = Backbone.Router.extend({
 
