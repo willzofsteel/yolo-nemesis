@@ -1,3 +1,33 @@
 #spin-target{
 	padding: 25 25 25 25;
 }
+
+#HTMLReporter {
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100%;
+    background-color: #fff;
+
+    a#JasmineReporterCloseBtn, a#JasmineReporterCloseBtn:hover {
+        text-decoration: none;
+    }
+
+    .results {
+        margin-bottom: 14px;
+    }
+}
+
+#JasmineReporterCloseBtn {
+    float: right; 
+    cursor: pointer; 
+    display: inline-block; 
+    margin: 0 0 0 8px;
+    padding: 0px 4px 2px; 
+    background-color: #800; 
+    text-decoration: none;
+    color: white;
+    font: bold 14px Arial;
+}

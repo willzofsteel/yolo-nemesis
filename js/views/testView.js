@@ -1,7 +1,13 @@
-define(['underscore', 'backbone', 'spinner'], function() {
+define([
+	'underscore'
+	, 'backbone'
+	, 'spinner'
+	, 'mustache'
+	, 'text!/test/brb/templates/test.tpl'
+], function(_, Backbone, Spinner, Mustache, testTemplate) {
    
     var testView = Backbone.View.extend({
-    	el: $("#spin-target")
+    	el: $("#mustache-test")
 
     	, initialize: function(){
     		_.bindAll(this, "render");
@@ -9,6 +15,11 @@ define(['underscore', 'backbone', 'spinner'], function() {
     	}
 
     	, render: function(){
+    		
+    		var out = Mustache.render(testTemplate, {name: "spaghetti joe", age: 23});
+
+    		this.$el.html(out);
+    		/*
     		var opts = {
 			  lines: 16, // The number of lines to draw
 			  length: 4, // The length of each line
@@ -28,6 +39,7 @@ define(['underscore', 'backbone', 'spinner'], function() {
 
 			var target = this.el;
 			var spinner = new Spinner(opts).spin(target);
+			*/
     	}
     });
    

@@ -4,6 +4,9 @@ require.config({
 		, 'underscore' : 'libs/backbone/underscore'
 		, 'backbone' : 'libs/backbone/backbone'
 		, 'spinner' : 'libs/spinjs/spin'
+		, 'mustache' : 'libs/mustache/mustache'
+		, 'jasmine' : 'libs/jasmine/jasmine'
+		, 'jasminehtml' : 'libs/jasmine/jasmine-html'
 	}
 })
 
