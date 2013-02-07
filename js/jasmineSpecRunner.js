@@ -3,12 +3,10 @@ define([], function(){
 	var SpecRunner = {};
 
 	SpecRunner.execute = function(reporter){
-		require([
-			'jasmine'
-			, 'jasminehtml'
-			, 'tests/simpleTest'
-			, 'tests/simpleTest2'
-			], function(){
+		require(['jasmine'
+				, 'jasminehtml'
+				, 'tests/simpleTest'			
+				], function(){
 
 				var specs = Array.prototype.slice.call(arguments, 2);
 
@@ -35,8 +33,6 @@ define([], function(){
 
 	return SpecRunner;
 			
-	
-	
 });
 
 
